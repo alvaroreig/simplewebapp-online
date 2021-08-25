@@ -1,4 +1,4 @@
-package com.example.servingwebcontent;
+package com.arg.springonline;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

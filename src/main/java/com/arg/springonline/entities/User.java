@@ -1,4 +1,4 @@
-package com.example.servingwebcontent.entities;
+package com.arg.springonline.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -17,8 +17,7 @@ public class User {
 
   public User() {}
   
-  public User(int id, String name, String email) {
-	this.id = id;
+  public User(String name, String email) {
 	this.name = name;
 	this.email = email;
 }

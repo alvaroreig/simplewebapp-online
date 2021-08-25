@@ -1,8 +1,8 @@
-package com.example.servingwebcontent.repositories;
+package com.arg.springonline.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.example.servingwebcontent.entities.User;
+import com.arg.springonline.entities.User;
 
 // This will be AUTO IMPLEMENTED by Spring into a Bean called userRepository
 // CRUD refers Create, Read, Update, Delete

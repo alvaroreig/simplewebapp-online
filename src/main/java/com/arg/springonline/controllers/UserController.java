@@ -1,4 +1,4 @@
-package com.example.servingwebcontent.controllers;
+package com.arg.springonline.controllers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.example.servingwebcontent.entities.User;
-import com.example.servingwebcontent.repositories.UserRepository;
+import com.arg.springonline.entities.User;
+import com.arg.springonline.repositories.UserRepository;
 
 
 @Controller
