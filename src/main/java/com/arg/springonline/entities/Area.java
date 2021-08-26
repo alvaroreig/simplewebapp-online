@@ -46,5 +46,10 @@ public class Area {
 	public void setResponsibleName(String responsibleName) {
 		this.responsibleName = responsibleName;
 	}
+	
+	@Override
+	public String toString() {
+		return id.toString() + ":" + name + ":" + responsibleName;
+	}
 
 }

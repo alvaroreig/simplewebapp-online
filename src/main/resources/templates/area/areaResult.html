@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Area saved</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Result</h1>
+    <p th:text="'id: ' + ${area.id}" />
+    <p th:text="'Name: ' + ${area.name}" />
+    <p th:text="'Responsible: ' + ${area.responsibleName}" />
+    <a href="/area">Submit another area</a>
+    <a href="/areas">View all areas</a>
+</body>
+</html>
