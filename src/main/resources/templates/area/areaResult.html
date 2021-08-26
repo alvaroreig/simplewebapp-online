@@ -1,15 +1,53 @@
 <!DOCTYPE HTML>
 <html xmlns:th="https://www.thymeleaf.org">
-<head> 
-    <title>Area saved</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<head>
+	<title>Area saved</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<link rel="stylesheet" href="webjars/bootstrap/4.0.0-2/css/bootstrap.min.css " />
 </head>
+
 <body>
-	<h1>Result</h1>
-    <p th:text="'id: ' + ${area.id}" />
-    <p th:text="'Name: ' + ${area.name}" />
-    <p th:text="'Responsible: ' + ${area.responsibleName}" />
-    <a href="/area">Submit another area</a>
-    <a href="/areas">View all areas</a>
+
+	<div class="jumbotron text-center">
+		<h1>Welcome to DIT</h1>
+		<p>Resize this responsive page to see the effect!</p>
+	</div>
+
+	<div class="container">
+
+		<h1>Result</h1>
+
+		<table class="table table-bordered">
+
+			<tbody>
+				<tr>
+					<td>ID</td>
+					<td>
+						<p th:text="${area.id}" />
+					</td>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td>
+						<p th:text="${area.name}" />
+					</td>
+				</tr>
+				<tr>
+					<td>Responsible</td>
+					<td>
+						<p th:text="${area.responsibleName}" />
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<a class="btn btn-primary" href="/area">Submit a new area</a>
+		<a class="btn btn-primary" href="/areas">View all areas</a>
+
+	</div>
+
 </body>
+
 </html>
