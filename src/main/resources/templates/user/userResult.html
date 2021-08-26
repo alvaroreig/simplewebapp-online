@@ -1,15 +1,53 @@
 <!DOCTYPE HTML>
 <html xmlns:th="https://www.thymeleaf.org">
-<head> 
-    <title>User saved</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<head>
+	<title>User saved</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<link rel="stylesheet" href="webjars/bootstrap/4.0.0-2/css/bootstrap.min.css " />
 </head>
+
 <body>
-	<h1>Result</h1>
-    <p th:text="'id: ' + ${user.id}" />
-    <p th:text="'Name: ' + ${user.name}" />
-    <p th:text="'Email: ' + ${user.email}" />
-    <a href="/user">Submit another user</a>
-    <a href="/users">View all users</a>
+
+	<div class="jumbotron text-center">
+		<h1>Welcome to DIT</h1>
+		<p>Resize this responsive page to see the effect!</p>
+	</div>
+	
+	<div class="container">
+
+		<h1>Result</h1>
+
+		<table class="table table-bordered">
+
+			<tbody>
+				<tr>
+					<td>ID</td>
+					<td>
+						<p th:text="${user.id}" />
+					</td>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td>
+						<p th:text="${user.name}" />
+					</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td>
+						<p th:text="${user.email}" />
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<a class="btn btn-primary" href="/user">Submit a new user</a>
+		<a class="btn btn-primary" href="/users">View all users</a>
+
+	</div>
+
 </body>
+
 </html>
