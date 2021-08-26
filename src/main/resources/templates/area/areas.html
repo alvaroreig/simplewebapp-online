@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>All users</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th> ID </th>
+				<th> Name </th>
+				<th> Email </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="area : ${areas}">
+				<td><span th:text="${area.id}"> ID </span></td>
+				<td><span th:text="${area.name}"> Name </span></td>
+				<td><span th:text="${area.responsibleName}"> Responsible </span></td>
+			</tr>
+		</tbody>
+	</table>
+	<a href="/area">Submit a new area</a>
+</body>
+
+</html>

@@ -32,13 +32,13 @@ public class UserController {
 		List<User> retrievedUsers = (List<User>) userRepository.findAll();
 		model.addAttribute("users", retrievedUsers);
 		logger.info("Retrieving " + retrievedUsers.size() + " users");
-		return "users";
+		return "user/users";
 	}
 
 	@GetMapping("/user")
 	public String greetingForm(Model model) {
 		model.addAttribute("user", new User());
-		return "user";
+		return "user/user";
 	}
 
 	@PostMapping("/user")
@@ -46,7 +46,7 @@ public class UserController {
 		userRepository.save(user);
 		logger.info("Storing new user: " + user);
 		model.addAttribute("user", user);
-		return "userResult";
+		return "user/userResult";
 	}
 
 }
