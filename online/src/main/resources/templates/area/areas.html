@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>All areas</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<link rel="stylesheet" href="webjars/bootstrap/4.0.0-2/css/bootstrap.min.css " />
+</head>
+
+<body>
+
+	<div class="jumbotron text-center">
+		<h1>Welcome to DIT</h1>
+		<p>Resize this responsive page to see the effect!</p>
+	</div>
+
+	<div class="container">
+
+		<h1 class="text-center">All areas</h1>
+
+		<table class="table table-bordered table-hover">
+
+			<thead class="thead-light">
+				<tr>
+					<th> ID </th>
+					<th> Name </th>
+					<th> Responsible </th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="area : ${areas}">
+					<td><span th:text="${area.id}"> ID </span></td>
+					<td><span th:text="${area.name}"> Name </span></td>
+					<td><span th:text="${area.responsibleName}"> Responsible </span></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<a class="btn btn-primary" href="/area">Submit a new area</a>
+
+	</div>
+
+</body>
+
+</html>
