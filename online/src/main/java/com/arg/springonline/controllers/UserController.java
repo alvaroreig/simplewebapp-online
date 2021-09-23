@@ -106,5 +106,17 @@ public class UserController {
 		model.addAttribute("user", user);
 		return "user/userResult";
 	}
+	
+	@GetMapping("/responsibleUsers")
+	public String responsibleUsers(Model model) {
+		/*
+		 * Rellenar código para recuperar los usuarios responsables
+		 * de áreas
+		 */
+		
+		
+		return "user/users";
+		
+	}
 
 }
